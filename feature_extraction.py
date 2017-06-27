@@ -1,11 +1,8 @@
 import tensorflow as tf
 import numpy as np
 
-#IMG_PATH = 'path/to/input/image.jpg'
-#MODEL_PATH = 'path/to/classify_image_graph_def.pb'
-IMG_PATH = './panda.jpg'
-MODEL_PATH = '../classify_image_graph_def.pb'
-
+IMG_PATH = 'path/to/input/image.jpg'
+MODEL_PATH = 'path/to/classify_image_graph_def.pb'
 
 # Load pre-trained model
 inception_v3 = tf.gfile.FastGFile(MODEL_PATH, 'rb')
