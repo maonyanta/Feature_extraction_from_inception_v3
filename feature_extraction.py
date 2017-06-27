@@ -22,6 +22,6 @@ with tf.Session() as sess:
 
     # Extracting features
     features = sess.run(pool3, {'DecodeJpeg/contents:0': image_data})
-    # For image, 'DecodeJpeg:0' should be set.
+    # For png image, 'DecodeJpeg:0' should be set.
     # features = sess.run(pool3, {'DecodeJpeg:0': image_data})
     print(np.squeeze(features))
